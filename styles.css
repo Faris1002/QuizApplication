@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121c2d;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+  background: #1c2a3a;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+}
+
+h1, h2 {
+  color: #00bfff;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.difficulty-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn.green { background: #28a745; }
+.btn.yellow { background: #ffc107; }
+.btn.red { background: #dc3545; }
+.btn.blue { background: #007bff; }
+.btn.purple { background: #6f42c1; }
+.btn:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  background: #3e4c5c;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#progress-fill {
+  background: #00bfff;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+#quiz-box {
+  background: #243447;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#options button {
+  width: 100%;
+  background: #2f3d50;
+  color: white;
+  border: 1px solid #555;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+#options button:hover {
+  background: #415b76;
+}
+
+.score-box {
+  background: #2f3d50;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+#quiz-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+#quiz-difficulty span {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+#timer-box {
+  background: #2f3d50;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  color: #87cefa;
+}
